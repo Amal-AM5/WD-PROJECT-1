@@ -1,0 +1,470 @@
+@font-face {
+    font-family: 'lato_my';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato_my',sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1.5;
+    word-spacing: 2;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* ------------------------------- */
+/*  REUSABLE CODE  */
+/* ------------------------------- */
+
+
+
+h1 {
+    color: #000;
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 180%;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 0;
+}
+
+.h2-title {
+    padding: 50px 280px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.row-new {
+    width: 65%;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    background-color: rgb(15, 15, 15);
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 82%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgb(75, 72, 72);
+}
+
+.btn-reg {
+    margin-right: 25px;
+    transition: background-color 0.5s;
+}
+
+.btn-reg:hover,
+.btn-reg:active {
+    background-color: rgb(75, 72, 72);
+}
+
+.lower-level .btn-sch {
+    background-color: rgb(240, 240, 240);
+    color: #000;
+    transition: background-color 0.5s;
+}
+
+.lower-level .btn-sch:hover,
+.lower-level .btn-sch:active {
+    background-color: rgb(223, 222, 222);
+}
+
+
+
+/* ------------------------------- */
+/*  HEADER  */
+/* ------------------------------- */
+
+header {
+    height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    
+}
+
+.nav-menu li {
+    list-style: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 82%;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+
+.nav-menu li p { font-size: 135%;}
+
+.nav-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-a {
+    font-size: 90%;
+    margin-left: 3px;
+}
+
+.fa-globe,
+.fa-braille,
+.fa-user { margin-right: 8px; }
+
+.menu-left { margin-left: 30%;}
+
+.nav-menu .btn-active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s;
+}
+
+.nav-menu .btn-active:hover {
+    background-color: rgba(243, 237, 237, 0.9);
+}
+
+.container-img {
+    width: 100%;
+    height: 65%;
+    background-image: url('../img/Rider_Home_bg_desktop2x.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-menu {
+    width: 585px;
+    height: 540px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 19%; top: 13%;
+}
+
+.box-menu hr {
+    border: none;
+    border-bottom: 1px solid rgb(230, 230, 230);
+} 
+
+.box-menu .row {
+    width: 100%;
+    height: 140px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.box-icon {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.box-icon img { margin-bottom: 20px; }
+
+.box-icon p { font-size: 80%; font-weight: bold;  width: 20%; margin: 0 auto;}
+
+.box-icon .under-line::after {
+    display: block;
+    height: 5px;
+    background-color: #000;
+    content: " ";
+    width: 80px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.lower-level .row {
+    background-color: transparent;
+    width: 80%;
+}
+
+.reg-form input[type=text] {
+    width: 100%;
+    height: 50px;
+    padding: 10px 40px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.reg-form input[type=text]:focus { outline: none; }
+
+.lower-level .bottom { margin-top: 24px;}
+
+.small-container {
+    background-image: url('../img/pexels-aleksandar-pasaric-325185.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+}
+
+.small-container h2 {
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.small-container .row p {
+    margin-bottom: 40px;
+    margin-left: 120px;
+}
+
+.small-container .row .btn-see {
+    margin-left: 120px;
+}
+
+.rider-uber .rider-box {
+    display: flex;
+    width: 520px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.rider-uber .row-new {
+    margin-bottom: 30px;
+}
+
+.rider-uber .row-new h3 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.rider-uber .rider-box p {
+    font-size: 92%;
+    margin-left: 25px;
+}
+
+.rider-uber .rider-box .fa-arrow-right-long {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 120%;
+}
+
+.focused-on-safety .row-new { margin-bottom: 100px;}
+
+.box-focused img { margin-bottom: 20px; }
+
+.box-focused .small-title {
+    font-weight: bold;
+    font-size: 110%;
+    padding-bottom: 15px;
+    color: rgb(48, 48, 48);
+}
+
+.box-focused .small-desc {
+    font-size: 92%;
+    font-family: sans-serif;
+    color: rgb(100, 100, 100);
+    padding-bottom: 40px;
+}
+
+.link-underline:link,
+.link-underline:visited {
+    font-size: 95%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    transition: border-bottom 0.2s ease;
+}
+
+.link-underline:hover,
+.link-underline:active {
+    border-bottom: 1px solid rgb(39, 39, 39);
+}
+
+
+.box-focused-small img { margin-bottom: 10px;}
+
+.box-focused-small h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(56, 56, 56);
+}
+
+.box-focused-small p {
+    font-size: 94%;
+    width: 95%;
+    color: rgb(82, 82, 82);
+    margin-bottom: 40px;
+}
+
+
+.section-apps {
+    height: 400px;
+    background-color: rgb(236, 236, 236);
+}
+.section-apps .re-title {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.box-apps {
+    display: flex;
+    margin-left: 0;
+    width: 48%;
+    height: 220px;
+    padding: 30px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.box-apps a:link,
+.box-apps a:visited {
+    color: #000;
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.section-sign {
+    height: 220px;
+}
+
+.box-sign { margin-top: 70px;}
+
+.box-sign a:link,
+.box-sign a:visited {
+    color: #000;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.box-sign a .fa-arrow-right-long { margin-left: 300px;}
+
+.box-sign a::after {
+    content: '';
+    display: block;
+    background-color: #000;
+    margin-top: 30px;
+    width: 100%;
+    height: 1px;
+}
+
+
+footer {
+    height: 900px;
+    background-color: #000;
+    color: #fff;
+}
+
+.title-uber {
+    margin-left: 0;
+    margin-top: 150px;
+    font-size: 150%;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.visit-link:link,
+.visit-link:visited {
+    font-size: 95%;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+
+
+.visit-link:hover,
+.visit-link:active {
+    border-bottom: 1px solid #fff;
+}
+
+.footer-row { margin-top: 60px; padding-bottom: 30px;}
+
+.list-footer { list-style: none; margin-top: 20px;}
+
+.list-footer li {
+    padding: 5px 0;
+}
+
+.list-footer li .re-link { font-size: 80%;}
+
+.re-link:hover,
+.re-link:active {
+    border: none;
+    color: rgb(187, 187, 187);
+}
+
+.footer-social { list-style: none; display: flex;} 
+
+.footer-box { width: 320px;}
+
+.footer-social li .btn-link {
+    background-color: #000;
+    padding: 18px 22px;
+}
+
+.footer-social li .btn-link:hover,
+.footer-social li .btn-link:active{
+    background-color: rgb(75, 72, 72);
+}
+
+.footer-img img {
+    width: 30%; height: auto;
+    margin-right: 10px;
+}
+
+footer .update-row p {
+    display: inline-block;
+    color: rgb(126, 126, 126);
+    font-size: 82%;
+    margin-right: 48%;
+}
+
+footer .update-row .update-link:link,
+footer .update-row .update-link:visited {
+    color: rgb(100, 100, 100);
+    font-size: 80%;
+    margin-right: 20px;
+}
+
+footer .update-row .update-link:hover,
+footer .update-row .update-link:active {
+    color: rgb(202, 202, 202);
+}
